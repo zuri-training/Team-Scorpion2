@@ -42,7 +42,7 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 ## Meet the team
 
 ### Product designers 🎭
-
+<details>
 <ul>
   <li><a href="https://github.com/Abiola54">Ishola Amidat Abiola</a></li>
   <li><a href="https://github.com/Abigail25">ABIGAIL OGBO</a></li>
@@ -52,19 +52,37 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
   <li><a href="https://github.com/tosannemi">Tosan Iziomoh</a></li>
   <li><a href="https://github.com/Opeyemiishola07">Ishola Opeyemi</a></li>
 </ul>
+</details>
 
 ## Developers 💻
-
+<details>
 <ul>
   <li><a href="https://github.com/Franklivania">Chibuzo Odigbo</a></li>
   <li><a href="https://github.com/solomonuche">Solomon Nweke</a></li>
   <li><a href="https://github.com/L0rd5n0w">Ifeoluwa Adewusi</a></li>
 </ul>
+</details>
 
 ## What we used to build 🧱
 <p>
+
+### Client Side
+
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
+
+### Product design
+
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
+
+### Backend
+<a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/django-colored.svg" width="36" height="36" alt="Django" /></a>
+
+### IDE/SERVER SIDE
+
+![vscode](https://user-images.githubusercontent.com/49784088/205490253-1e212e08-6968-43f0-a66c-3e01dd9cc17e.svg)
+
 </p>
+
+# How to get started
