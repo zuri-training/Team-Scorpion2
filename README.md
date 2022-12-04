@@ -84,5 +84,3 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 ![vscode](https://user-images.githubusercontent.com/49784088/205490253-1e212e08-6968-43f0-a66c-3e01dd9cc17e.svg)
 
 </p>
-
-# How to get started
