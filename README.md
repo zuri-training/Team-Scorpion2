@@ -48,7 +48,7 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
   <li><a href="https://github.com/Abigail25">ABIGAIL OGBO</a></li>
   <li><a href="https://github.com/Markuszafi">Markus Bukata Zafi</a></li>
   <li><a href="https://github.com/LadeOnipede">Lade Onipede</a></li>
-  <li><a href="https://github.com/BigSam">Ogbonnaya Samuel</a></li>
+  <li><a href="https://github.com/Roleking07">Ogbonnaya Samuel</a></li>
   <li><a href="https://github.com/tosannemi">Tosan Iziomoh</a></li>
   <li><a href="https://github.com/Opeyemiishola07">Ishola Opeyemi</a></li>
 </ul>
