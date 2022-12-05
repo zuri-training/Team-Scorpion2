@@ -48,7 +48,7 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
   <li><a href="https://github.com/Abigail25">ABIGAIL OGBO</a></li>
   <li><a href="https://github.com/Markuszafi">Markus Bukata Zafi</a></li>
   <li><a href="https://github.com/LadeOnipede">Lade Onipede</a></li>
-  <li><a href="https://github.com/BigSam">Ogbonnaya Samuel</a></li>
+  <li><a href="https://github.com/Roleking07">Ogbonnaya Samuel</a></li>
   <li><a href="https://github.com/tosannemi">Tosan Iziomoh</a></li>
   <li><a href="https://github.com/Opeyemiishola07">Ishola Opeyemi</a></li>
 </ul>
@@ -76,10 +76,11 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
 
-### Backend
+### Backend/SERVER SIDE
+
 <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/django-colored.svg" width="36" height="36" alt="Django" /></a>
 
-### IDE/SERVER SIDE
+### IDE
 
 ![vscode](https://user-images.githubusercontent.com/49784088/205490253-1e212e08-6968-43f0-a66c-3e01dd9cc17e.svg)
 
