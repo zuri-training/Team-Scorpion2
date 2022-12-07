@@ -27,3 +27,14 @@ html, body{
     --font-main: 'Roboto', sans-serif;
     --font-sub: 'Lato', sans-serif;
 }
+
+::-webkit-scrollbar{
+    background: none;
+    width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 0.01rem;
+    border-radius: 0.5rem;
+    background: var(--main-color-hue);
+}
