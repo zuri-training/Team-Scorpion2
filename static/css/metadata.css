@@ -1,0 +1,33 @@
+.metadata{
+    font-family: var(--font-main);
+    color: var(--plain-color);
+    background: var(--plain-color);
+}
+
+.metadata h1{
+    text-align: center;
+    font-family: var(--font-sub);
+    color: var(--main-color);
+    padding: 2rem 0;
+    font-size: 3rem;
+    border: none;
+    text-decoration: underline;
+}
+
+.metadata .block{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.metadata .block img{
+    height: 25rem;
+}
+
+.metadata .block .text{
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--main-color-hue);
+    font-size: 1.5rem;
+}

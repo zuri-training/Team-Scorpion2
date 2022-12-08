@@ -1,0 +1,29 @@
+main{
+    background: var(--main-color);
+}
+
+.land{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 3rem;
+    font-family: var(--font-main);
+}
+
+.one{
+    color: var(--sec-color);
+}
+
+.one h1{
+    text-decoration: underline;
+    font-size: 3rem;
+    font-family: var(--font-sub);
+}
+
+.one h1 span{
+    color: var(--accent-color);
+}
+
+.one p{
+    font-size: 1.5rem;
+}

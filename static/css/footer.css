@@ -1,0 +1,51 @@
+footer{
+    padding: 1rem 0 0 0;
+    background: var(--sub-color);
+    font-family: var(--font-main);
+}
+
+.foots{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.foots .socials a{
+    color: var(--plain-color);
+    padding: 0.5rem;
+}
+
+.foots .socials a:hover{
+    color: var(--sec-color);
+}
+
+.foots p{
+    padding-bottom: 0.5rem;
+    color: var(--plain-color);
+    font-size: 1.3rem;
+}
+
+.foots ul{
+    list-style: none;
+}
+
+.foots ul li{
+    padding: 0.3rem;
+}
+
+.foots ul a{
+    text-decoration: none;
+    color: var(--plain-color);
+}
+
+.foots ul a:hover{
+    color: var(--sec-color);
+}
+
+footer .copy{
+    text-align: center;
+    width: 100%;
+    background: var(--main-color);
+    padding: 0.5rem;
+    color: var(--plain-color);
+}
