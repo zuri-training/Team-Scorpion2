@@ -2,7 +2,6 @@
     font-family: var(--font-main);
     color: var(--plain-color);
     background: var(--plain-color);
-    padding: 0 4rem;
 }
 
 .metadata h1{
@@ -18,6 +17,11 @@
 .metadata .block{
     display: flex;
     align-items: center;
+    padding: 0 2rem;
+}
+
+.metadata .block img{
+    height: 25rem;
 }
 
 .metadata .block .text{
