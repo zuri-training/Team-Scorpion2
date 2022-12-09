@@ -8,10 +8,11 @@ class UserInfoForm(forms.ModelForm):
 
     class Meta:
         model = User
-        field = (all)
+        fields = ['username', 'email', 'first_name', 'last_name', 'password']
 
 
 class UploadedFilesForm(forms.ModelForm):
     class Meta:
         model = UploadedFiles
-        field = (all)
+        fields = '__all__'
+
