@@ -7,7 +7,7 @@ def landingPage(request):
     return render(request, 'demo/index.html', {})
 
 def signUp(request):
-    if request.method == POST:
+    if request.method == 'POST':
         f_name = request.POST.get('f_name')
         l_name = request.POST.get('l_name')
         u_name = request.POST.get('u_name')
@@ -19,9 +19,14 @@ def signUp(request):
         other_user.last_name = l_name
 
         other_user.save()
+
         return redirect('login-page')
 
     return render(request, 'demo/signup.html', {})
 
 def logIn(request):
+    if request.method == 'POST':
+         u_name = request.POST.get('u_name')
+         password = request.POST.get('password')
+
     return render(request, 'demo/login.html', {})
