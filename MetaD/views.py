@@ -1,5 +1,15 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
+from django.http import HttpResponse
 from django.contrib.auth.models import User
+#to restrict unauthorized users from certain page, use:
+from django.contrib.auth.decorators import login_required 
+
+'''the put @Login_required on the page section...
+then specify in settings: redirect in settings...'''
+
+
+
 
 # Create your views here.
 
@@ -26,7 +36,16 @@ def signUp(request):
 
 def logIn(request):
     if request.method == 'POST':
-         u_name = request.POST.get('u_name')
-         password = request.POST.get('password')
+        u_name = request.POST.get('u_name')
+        password = request.POST.get('password')
 
+        user = authenticate(request, username = u_name, password = password)
+        if user is not None:
+            login(request, user)
+            # redirect in real case will be to the pages authenticated users have access to, not home-page
+            return redirect('home-page')
+        else:
+            return HttpResponse('User does not exist')
+            # return redirect('signup-page')
+         
     return render(request, 'demo/login.html', {})
