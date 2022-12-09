@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+
+<body>
+    <main>
+        <h1>Signup Here...</h1>
+
+        <div class="form_cover">
+
+            <form method="POST">
+                {% csrf_token %}
+                <div>
+                    <label for="f_name">First Name</label>
+                    <input type="text" placeholder="Jane" name="f_name">
+                </div>
+
+                <div>
+                    <label for="l_name">Last Name</label>
+                    <input type="text" placeholder="Doe" name="l_name">
+                </div>
+
+                <div>
+                    <label for="u_name">Username</label>
+                    <input type="text" placeholder="proxzy" name="u_name">
+                </div>
+                <div>
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="demo@email.com" name="email">
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input type="password" placeholder="1234..." name="password">
+                </div>
+
+                <button type="submit">Submit</button>
+               <small> I have account <a href="{% url 'login-page' %}">Login</a></small>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
