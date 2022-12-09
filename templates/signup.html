@@ -1,17 +1,131 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/signup.css">
-    <title>Scorpion Signup</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../static/files/images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/header.css">
+        <link rel="stylesheet" href="/static/css/signup.css">
+        <link rel="stylesheet" href="../static/css/footer.css">
+        <title>SIGN UP</title>
+    </head>
 <body>
 
     <div class="warpper">
-        
+        <!-- header/nav section -->
+        <header>
+            <img src="../static/files/images/icon.png" alt="">
+
+            <nav>
+                <a href="/">Home</a>
+                <a href="/">About Us</a>
+                <a href="/">FAQs</a>
+                <a href="/">Contact Us</a>
+            </nav>
+
+            <nav class="register">
+                <a href="" id="sign">Sign Up</a>
+                <a href="" id="log">Log in</a>
+            </nav>
+        </header>
+
+        <!--Signup sections  -->
+        <div class="signup">
+            <div class="signup-content">
+                <div class="signup-title">
+                    <h3>Create An Account</h3>
+                </div>
+                <div class="signup-form">
+                    <form action="/templates/login.html" method="">
+                        <div class="name">
+                            <div class="firstname">
+                                <label for="firstname">First Name</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="Enter first name" required>
+                            </div>
+                            <div class="lastname">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Enter last name" required>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required >
+                        </div>
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                            <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Re-enter your password" required>
+                        </div>
+                        <div class="terms">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Accept Terms and Conditions</label>
+                        </div>
+                        <div class="button">
+                            <button type="submit">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            
+            </div>
+
+            <div class="signup-img">
+                <img src="/static/files/images/pana.png" alt="Pana">
+            </div>
+            
+
+        </div>
+
+
+        <!-- Footer section -->
+        <footer>
+                <div class="foots">
+                    
+                    <div class="socials">
+    
+                        <p>Connect with us</p>
+                        
+                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        
+                    </div>
+                    
+                    <div class="links">
+                        
+                        <p>Quick Link</p>
+                        
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">How it works</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Register</a></li>
+                            <li><a href="">Login</a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="help">
+                        
+                        <p>Support</p>
+                        
+                        <ul>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Blogs</a></l1>
+                        </ul>
+                        
+                    </div>
+                </div>
+    
+                <div class="copy">
+                    copyright © 2022 Team_Scorpion 2
+                </span>
+        </footer>
     </div>
     
 </body>
