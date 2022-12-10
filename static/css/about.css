@@ -1,0 +1,129 @@
+.about{
+    background: var(--plain-color);
+    font-family: var(--font-sub);
+    padding: 2rem;
+}
+
+.about .block{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .block .one{
+    display: flex;
+    flex-direction: column;
+}
+
+.about .block .one .card{
+    padding: 1rem 0;
+    color: var(--sub-color);
+}
+
+.about .block .one .card h1{
+    color: var(--sec-two-color);
+    text-decoration: underline;
+    padding: 0.3rem 0;
+}
+
+.about .block .two h1{
+    text-align: center;
+    color: var(--sec-two-color);
+    text-decoration: underline;
+    padding: 1rem 0;
+}
+.about .block .two .cask{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: var(--plain-color);
+    gap: 2rem;
+}
+
+.about .block .two .cask .container{
+    padding: 2rem 0.3rem;
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    width: 20rem;
+}
+
+.a{
+    background: var(--sub-color);
+}
+
+.b{
+    background: var(--sec-color);
+}
+
+.about .value{
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 5rem 0 0 0;
+}
+
+.about .value .art h1{
+    color: var(--sec-color);
+    text-decoration: underline;
+}
+
+.about .value .art{
+    background: var(--neutral-color);
+    height: 20rem;
+    width: 20rem;
+    display: grid;
+    place-items: center;
+}
+
+.about .value .art .circle{
+    position: relative;
+    background: var(--plain-color);
+    height: 7rem;
+    width: 7rem;
+    border: 0.5rem solid var(--sub-color);
+    border-radius: 50%;
+    color: var(--sub-color);
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.about .value .art span{
+    position: absolute;
+    color: var(--sub-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 5rem;
+}
+
+.about .value .art span:after{
+    content: '';
+    height: 1.4rem;
+    padding: 0.02rem;
+    background: var(--sub-color);
+}
+
+#a{
+    top: 9rem;
+    right: 33rem;
+    transform: rotate(45deg);
+}
+
+#b{
+    top: 15rem;
+    right: 33rem;
+    transform: rotate(120deg);
+}
+
+#c{
+    top: 15rem;
+    left: 32rem;
+    transform: rotate(230deg);
+}
+
+#d{
+    top: 9rem;
+    left: 33rem;
+    transform: rotate(-48deg);
+}
