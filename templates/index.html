@@ -33,9 +33,14 @@
             </nav>
 
             <nav class="register">
-                <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
-                <a href="{% url 'log-page' %}" id="log">Log in</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'log-out' %}" id="out">Log out</a>
+                {%else%}
+                    <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
+                    <a href="{% url 'log-page' %}" id="log">Log in</a>
+               
             </nav>
+                {% endif %}
         </header>
 
         <main>
