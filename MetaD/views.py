@@ -37,6 +37,7 @@ def signup_page(request):
         other_user = User.objects.create_user(username, email, password)
         other_user.first_name = first_name
         other_user.last_name = last_name
+        other_user.username = username
 
         other_user.save()
         return HttpResponseRedirect(reverse('log-page'))
