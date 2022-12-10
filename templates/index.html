@@ -20,12 +20,14 @@
     
     <div class="wrapper">
 
+        <!-- header part -->
+
         <header>
 
             <img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/>
 
 
-            <nav>
+            <nav class="links">
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
@@ -42,6 +44,8 @@
             </nav>
                 {% endif %}
         </header>
+
+        <!-- the main body -->
 
         <main>
 
@@ -136,6 +140,8 @@
             </div>
 
         </section>
+
+        <!-- the footer -->
 
         <footer>
             <div class="foots">
