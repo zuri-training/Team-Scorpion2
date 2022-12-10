@@ -90,11 +90,11 @@ DATABASES = {
 
 
 PASSWORD_HASHERS = [
-	'django.contrib.auth.hashers.Argon2PasswordHasher',
-	'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-	'django.contrib.auth.hashers.BCryptPasswordHasher',
-	'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-	'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-        'OPTIONS' : {'min_length':9}
+        'OPTIONS': {'min_length': 9}
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -130,8 +130,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    STATIC_DIR
+]
+STATIC_ROOT = []
 
-#MEDIA
+# MEDIA
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = 'media/'
@@ -140,6 +144,3 @@ MEDIA_URL = 'media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
