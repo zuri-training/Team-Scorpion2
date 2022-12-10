@@ -6,29 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="shortcut icon" href="{% static 'files/images/icon.png' %}" type="image/x-icon"/>
     <link rel="stylesheet" href="{%static 'css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/login.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+
     <title>LOGIN</title>
 </head>
 <body>
     <div class="wrapper">
         <!-- header/nav section -->
         <header>
+
             <img src="{% static 'files/images/icon.png' %}" alt="Oops, could not load image file"/>
 
             <nav>
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
+
                 <a href="/">FAQs</a>
                 <a href="/">Contact Us</a>
             </nav>
 
             <nav class="register">
+
                 <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                 <a href="{% url 'log-page' %}" id="log">Log in</a>
+
             </nav>
         </header>
 
@@ -38,6 +44,7 @@
                 <h3>Welcome Back </h3>
                 <h5><q>Metadata liberates us, liberates knowledge</q></h5>
                 <h6>David Weinberger</h6>
+
                 <img src="{% static 'files/images/rafiki.png' %}" alt="Rafiki"/>
             </div>
             <div class="loginform">
@@ -46,7 +53,7 @@
                      <p>Username:</p>
                      <input type="text" name="username"/>
                      <p>Password:</p>
-                     <input type="password" name="username">
+                     <input type="password" name="password">
                      <input type="Submit" value="Login">
                      <div class="form-group form-check">
                         <label class="form-check-label">
@@ -57,6 +64,7 @@
                 </form>
             </div>
         </div>
+
 
 
 
@@ -99,12 +107,15 @@
                         <li><a href="">Blogs</a></li>
                     </ul>
 
+
                 </div>
             </div>
 
             <div class="copy">
                 copyright © 2022 Team_Scorpion 2
+
             </div>
+
         </footer>
     </div>
 </body>
