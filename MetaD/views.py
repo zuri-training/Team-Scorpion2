@@ -18,6 +18,10 @@ def landingPage(request):
     return render(request, 'index.html')
 
 
+def aboutUs(request):
+    return render(request, 'about.html')
+
+
 def signup_page(request):
 
     trim = UserInfoForm
@@ -35,8 +39,7 @@ def signup_page(request):
         other_user.last_name = last_name
 
         other_user.save()
-
-        return HttpResponseRedirect(reverse('sign-page'))
+        return HttpResponseRedirect(reverse('log-page'))
 
     return render(request, 'signup.html', context=slight_trim)
 
@@ -53,6 +56,6 @@ def login_page(request):
             return HttpResponseRedirect(reverse('first-page'))
         else:
             return HttpResponse('User does not exist')
-            # return redirect('sign-page')
+        # return redirect('sign-page')
          
     return render(request, 'login.html', {})

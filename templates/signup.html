@@ -1,26 +1,110 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
-
-    <title>Scorpion Signup</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="{% static 'files/images/icon.png' %}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/signup.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+        <title>SIGN UP</title>
+    </head>
 <body>
 
     <div class="warpper">
-        <form action="" method="post">
-            {% csrf_token %}
-            {{ Lean_Trim }}
-            <input type="Submit" value="Register">
-        </form>
-        
+        <!-- header/nav section -->
+        <header>
+            <img src="{% static 'files/images/icon.png' %}" alt="Oops, couldn't load the image"/>
+
+            <nav>
+                <a href="{% url 'first-page' %}">Home</a>
+                <a href="/">About Us</a>
+                <a href="/">FAQs</a>
+                <a href="/">Contact Us</a>
+            </nav>
+
+            <nav class="register">
+                <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
+                <a href="{% url 'log-page' %}" id="log">Log in</a>
+            </nav>
+        </header>
+
+        <!--Signup sections  -->
+        <div class="signup">
+            <div class="signup-content">
+                <div class="signup-title">
+                    <h3>Create An Account</h3>
+                </div>
+                <div class="signup-form">
+                    <form action="{% url 'sign-page' %}" method="POST">
+                        <div class="form-group">
+                            {%csrf_token%}
+                            {{Lean_Trim.as_p}}
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="signup-img">
+                <img src="{% static 'files/images/pana.png' %}" alt="Pana"/>
+            </div>
+
+
+        </div>
+
+
+        <!-- Footer section -->
+        <footer>
+                <div class="foots">
+
+                    <div class="socials">
+
+                        <p>Connect with us</p>
+
+                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+
+                    </div>
+
+                    <div class="links">
+
+                        <p>Quick Link</p>
+
+                        <ul>
+                            <li><a href="{% url 'first-page' %}">Home</a></li>
+                            <li><a href="">How it works</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="{% url 'sign-page' %}">Register</a></li>
+                            <li><a href="{% url 'log-page' %}">Login</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="help">
+
+                        <p>Support</p>
+
+                        <ul>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Blogs</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="copy">
+                    copyright © 2022 Team_Scorpion 2
+                </div>
+        </footer>
     </div>
     
 </body>

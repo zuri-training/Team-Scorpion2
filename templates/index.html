@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{% static 'css/metadata.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/works.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/support.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>>>>>>>> change
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
     <title>PROJECT METADATA</title>
 </head>
 <body>
@@ -63,7 +63,7 @@
 
                 <img src="{% static 'files/images/image5.png' %}" alt="Oops, couldn't load image file"/>
 
-                <img src="{% static 'files/images/image5.png %} alt="">
+                <img src="{% static 'files/images/image5.png' %}" alt="">
 
             </div>
 
@@ -140,7 +140,6 @@
 
                     <button type="submit" id="live">Live Chat &nbsp; <img src="{% static 'files/images/messages-2.png' %}" alt=""></button>
 
-                    <button type="submit" id="live">Live Chat &nbsp; <img src="{% static 'files/images/messages-2.png' %}" alt=""></button>
 
                 </div>
             </div>
@@ -165,11 +164,11 @@
                     <p>Quick Link</p>
                     
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="{% url 'first-page' %}"">Home</a></li>
                         <li><a href="">How it works</a></li>
                         <li><a href="">About Us</a></li>
-                        <li><a href="">Register</a></li>
-                        <li><a href="">Login</a></li>
+                        <li><a href="{% url 'sign-page' %}"">Register</a></li>
+                        <li><a href="{% url 'about-page' %}"">Login</a></li>
                     </ul>
                     
                 </div>
