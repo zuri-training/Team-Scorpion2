@@ -1,33 +1,35 @@
 <!DOCTYPE html>
+{% load static %}
+=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="../static/files/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/header.css">
-    <link rel="stylesheet" href="../static/css/about.css">
-    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="shortcut icon" href="{% static 'files/images/icon.png' %}" type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
     <title>About us</title>
 </head>
 <body>
     <div class="wrapper">
 
         <header>
-            <img src="../static/files/images/icon.png" alt="">
+            <img src="{% static 'files/images/icon.png' %}" alt="Oops Image could not be displayed"/>
 
             <nav class="links">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About Us</a>
+                <a href="{% url 'first-page' %}">Home</a>
+                <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
                 <a href="/">Contact Us</a>
             </nav>
 
             <nav class="register">
-                <a href="./signup.html" id="sign">Sign Up</a>
-                <a href="./login.html" id="log">Log in</a>
+                <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
+                <a href="{%url 'log-page' %}" id="log">Log in</a>
             </nav>
         </header>
 
@@ -142,11 +144,11 @@
                     <p>Quick Link</p>
                     
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">How it works</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Register</a></li>
-                        <li><a href="">Login</a></li>
+                        <li><a href="{%url 'first-page' %}">Home</a></li>
+                        <li><a href="/">How it works</a></li>
+                        <li><a href="{% url 'about-page' %}">About Us</a></li>
+                        <li><a href="{% url 'sign-page' %}">Register</a></li>
+                        <li><a href="{%url 'log-page' %}">Login</a></li>
                     </ul>
                     
                 </div>
@@ -158,7 +160,7 @@
                     <ul>
                         <li><a href="">FAQs</a></li>
                         <li><a href="">Help</a></li>
-                        <li><a href="">Blogs</a></l1>
+                        <li><a href="">Blogs</a></li>
                     </ul>
                     
                 </div>
@@ -166,10 +168,14 @@
 
             <div class="copy">
                 copyright © 2022 Team_Scorpion 2
-            </span>
+            </div>
         </footer>
 
     </div>
-    <script src="../static/javascript/index.js"></script>
+    <script src="{% static 'javascript/index.js' %}"></script>
+    </div>
+        </footer>
+
+    </div>
 </body>
 </html>
