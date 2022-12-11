@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
         <link rel="stylesheet" href="{% static 'css/signup.css' %}"/>
         <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+
         <title>SIGN UP</title>
     </head>
 <body>
@@ -19,18 +20,22 @@
     <div class="warpper">
         <!-- header/nav section -->
         <header>
+
             <img src="{% static 'files/images/icon.png' %}" alt="Oops, couldn't load the image"/>
 
             <nav>
                 <a href="{% url 'first-page' %}">Home</a>
+
                 <a href="/">About Us</a>
                 <a href="/">FAQs</a>
                 <a href="/">Contact Us</a>
             </nav>
 
             <nav class="register">
+
                 <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                 <a href="{% url 'log-page' %}" id="log">Log in</a>
+
             </nav>
         </header>
 
@@ -41,6 +46,7 @@
                     <h3>Create An Account</h3>
                 </div>
                 <div class="signup-form">
+
                     <form action="{% url 'sign-page' %}" method="POST">
                        
                         <div class="form-group">
@@ -58,12 +64,15 @@
             </div>
 
 
+                  
+
         </div>
 
 
         <!-- Footer section -->
         <footer>
                 <div class="foots">
+
 
                     <div class="socials">
 
@@ -105,6 +114,7 @@
                 <div class="copy">
                     copyright © 2022 Team_Scorpion 2
                 </div>
+
         </footer>
     </div>
     
