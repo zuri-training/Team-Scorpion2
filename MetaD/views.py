@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth.models import User
 from .forms import UserInfoForm
+from django.contrib import messages
 
 # to restrict unauthorized users from certain page, use:
 from django.contrib.auth.decorators import login_required 
@@ -56,7 +57,6 @@ def login_page(request):
             # redirect in real case will be to the pages authenticated users have access to, not home-page
             return HttpResponseRedirect(reverse('first-page'))
         else:
-            return HttpResponse('User does not exist')
-        # return redirect('sign-page')
+            messages.info(request,'Wrong username or password')
          
     return render(request, 'login.html', {})
