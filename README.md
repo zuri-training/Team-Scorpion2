@@ -43,6 +43,7 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 
 ### Product designers 🎭
 <details>
+<summary>Designers</summary>
 <ul>
   <li><a href="https://github.com/Abiola54">Ishola Amidat Abiola</a></li>
   <li><a href="https://github.com/Abigail25">ABIGAIL OGBO</a></li>
@@ -56,10 +57,12 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 
 ## Developers 💻
 <details>
+<summary>Developers</summary>
 <ul>
   <li><a href="https://github.com/Franklivania">Chibuzo Odigbo</a></li>
   <li><a href="https://github.com/solomonuche">Solomon Nweke</a></li>
   <li><a href="https://github.com/L0rd5n0w">Ifeoluwa Adewusi</a></li>
+  <li><a href="https://github.com/Salemori">Aduragbemi Oduntan</a></li>
 </ul>
 </details>
 
@@ -85,3 +88,38 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 ![vscode](https://user-images.githubusercontent.com/49784088/205490253-1e212e08-6968-43f0-a66c-3e01dd9cc17e.svg)
 
 </p>
+
+## How to run locally
+
+## To clone, do this <br>
+
+### Type this code on your terminal as long as you have git installed (any version would do)
+
+```
+     git clone https://github.com/zuri-training/Team-Scorpion2.git 
+```
+
+### Or you can clone through Github desktop if you have the app
+
+<p> <b> Make sure you have a set up python environment running (The version we use is python 3.10)</b> <br>
+
+  Route to the location of the stored folder <br>
+</p>
+
+###   Then you can type
+```
+python manage.py runserver 
+```
+
+###  To run the code, at which if you have it set up well, it would show you this;
+
+```
+   Django version 4.1.3, using settings 'fetch_metadata.settings'
+   Starting development server at http://127.0.0.1:8000/
+   Quit the server with CTRL-BREAK. 
+```
+ <p>
+   Then <b> ctrl + click </b> the local address to open the server on your browser
+ </p>
+ <br>
+<p> Voila you have the system run locally!</p>
