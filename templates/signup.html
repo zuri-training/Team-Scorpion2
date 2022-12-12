@@ -21,7 +21,7 @@
         <!-- header/nav section -->
         <header>
 
-            <img src="{% static 'files/images/icon.png' %}" alt="Oops, couldn't load the image"/>
+            <a href="{% url 'first-page' %}"><img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/></a>
 
             <nav>
                 <a href="{% url 'first-page' %}">Home</a>
@@ -37,10 +37,16 @@
                 {%else%}
                     <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                     <a href="{% url 'log-page' %}" id="log">Log in</a>
+<<<<<<< HEAD
                 {% endif %}
 
             </nav>
                 
+=======
+                {%endif%}
+            </nav>
+
+>>>>>>> 7d873da665002491d554c13864b24e358faa440d
         </header>
 
         <!--Signup sections  -->
