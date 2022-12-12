@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
     <link rel="shortcut icon" href="{% static 'files/images/icon.png' %}" type="image/x-icon"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
-    <link rel="stylesheet" href="../static/css/contact.css">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     <title>Contact Us</title>
 </head>
 <body>
@@ -24,13 +25,20 @@
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
-                <a href="/">Contact Us</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                {%else%}
             </nav>
-
+                {%endif%}
             <nav class="register">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'log-out' %}" id="out">Log out</a>
+                {%else%}
                 <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                 <a href="{% url 'log-page' %}" id="log">Log in</a>
             </nav>
+                {%endif%}
         </header>
 
     </div>
