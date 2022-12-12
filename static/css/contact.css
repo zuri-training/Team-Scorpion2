@@ -1,0 +1,72 @@
+.contact{
+    position: relative;
+    background: var(--plain-color);
+    font-family: var(--font-main);
+}
+
+.contact .block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.contact .block .text{
+    width: calc(100% - 45%);
+    display: grid;
+    place-items: center;
+    row-gap: 3rem;
+}
+
+.contact .block .text h1{
+    color: var(--sec-two-color);
+    text-decoration: underline;
+    font-size: 3rem;
+    font-family: var(--font-sub);
+}
+
+.contact .block .text .links{
+    display: flex;
+    align-items: center;
+}
+
+.contact .block .text .links a{
+    color: var(--sub-color);
+    padding: 0 0.3rem;
+    text-decoration: none;
+}
+
+.contact .block .text .links a:hover{
+    color: var(--main-color);
+}
+
+
+.contact .block form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+input, textarea{
+    width: 35rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    outline: none;
+    border: 0.03rem solid var(--neutral-color);
+    background: var(--neutral-color);
+    resize: none;
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+#btn{
+    width: 7rem;
+    background: var(--sub-color);
+    color: var(--plain-color);
+    border-radius: 0.3rem;
+}
+
+#btn:hover{
+    background: var(--main-color);
+}
