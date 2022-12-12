@@ -21,13 +21,13 @@
         <!-- header/nav section -->
         <header>
 
-            <img src="{% static 'files/images/icon.png' %}" alt="Oops, couldn't load the image"/>
+            <a href="{% url 'first-page' %}"><img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/></a>
 
             <nav>
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="/">About Us</a>
                 <a href="/">FAQs</a>
-                <a href="/">Contact Us</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
             </nav>
                     
             <nav class="register">
@@ -37,18 +37,9 @@
                 {%else%}
                     <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                     <a href="{% url 'log-page' %}" id="log">Log in</a>
-               
-
+                {%endif%}
             </nav>
-                <!-- {% endif %}
 
-                {%if messages %}
-                <ul class="messages">
-                    {% for message in messages%}
-                    <li {% if message.tags %} class="{{ message.tags}}"{% endif%}>{{ message }}</li>
-                    {% endfor %}
-                </ul>
-                {% endif %} -->
         </header>
 
         <!--Signup sections  -->

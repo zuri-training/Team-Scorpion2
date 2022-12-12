@@ -20,13 +20,13 @@
         <!-- header/nav section -->
         <header>
 
-            <img src="{% static 'files/images/icon.png' %}" alt="Oops, could not load image file"/>
+            <a href="{% url 'first-page' %}"><img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/></a>
 
             <nav>
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
-                <a href="/">Contact Us</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
             </nav>
 
             <nav class="register">
@@ -61,7 +61,7 @@
                      <input type="Submit" class="btn btn-primary" value="Login">
                      <div class="form-group form-check">
                         <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Remember me
+                        <!-- <input class="form-check-input" type="checkbox"> Remember me -->
                         </label>
                     </div>
                         <p>Don't  have an account? <a href="{% url 'sign-page' %}">Sign up</a> </p>

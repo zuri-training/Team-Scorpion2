@@ -118,3 +118,23 @@
     text-decoration: underline;
 }
 
+/* button style */
+
+.btn{
+    background: var(--sub-color);
+    color: var(--plain-color);
+    outline: none;
+    padding: 0.3rem 2rem;
+    border: none;
+}
+
+.btn:hover{
+    background: var(--main-color);
+}
+
+/* form style */
+
+.loginform form input{
+    border: 0.02rem solid var(--main-color-hue);
+    outline: none;
+}
