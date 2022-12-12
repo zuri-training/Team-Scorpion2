@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="{% static 'files/images/icon.png' %}" type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+
+            <img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/>
+
+
+            <nav class="links">
+                <a href="{% url 'first-page' %}">Home</a>
+                <a href="{% url 'about-page' %}">About Us</a>
+                <a href="/">FAQs</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                {%else%}
+                {%endif%}
+            </nav>
+                
+            <nav class="register">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'log-out' %}" id="out">Log out</a>
+                {%else%}
+                <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
+                <a href="{% url 'log-page' %}" id="log">Log in</a>
+                {%endif%}
+            </nav>
+                
+        </header>
+
+    </div>
+    
+</body>
+</html>

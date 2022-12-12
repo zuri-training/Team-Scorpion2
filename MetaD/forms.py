@@ -8,7 +8,10 @@ class UserInfoForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'first_name', 'last_name', 'password']
+        fields = ['first_name', 'last_name', 'username', 'email', 'password']
+        help_texts = {
+            'username':(''),
+        }
 
 
 class UploadedFilesForm(forms.ModelForm):

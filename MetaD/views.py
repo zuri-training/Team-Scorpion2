@@ -24,6 +24,10 @@ def aboutUs(request):
     return render(request, 'about.html')
 
 
+def contact(request):
+    return render(request, 'contact.html')
+
+
 def signup_page(request):
 
     trim = UserInfoForm
@@ -72,3 +76,6 @@ def log_out_page(request):
     return HttpResponseRedirect(reverse('first-page'))
 
 
+@login_required
+def dashboard(request):
+    return render(request, 'dashboard.html' )

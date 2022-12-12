@@ -25,9 +25,9 @@
 
             <nav>
                 <a href="{% url 'first-page' %}">Home</a>
-                <a href="/">About Us</a>
+                <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
-                <a href="/">Contact Us</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
             </nav>
                     
             <nav class="register">
@@ -37,18 +37,10 @@
                 {%else%}
                     <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                     <a href="{% url 'log-page' %}" id="log">Log in</a>
-               
+                {% endif %}
 
             </nav>
-                <!-- {% endif %}
-
-                {%if messages %}
-                <ul class="messages">
-                    {% for message in messages%}
-                    <li {% if message.tags %} class="{{ message.tags}}"{% endif%}>{{ message }}</li>
-                    {% endfor %}
-                </ul>
-                {% endif %} -->
+                
         </header>
 
         <!--Signup sections  -->
@@ -65,7 +57,7 @@
                             {%csrf_token%}
                             {{Lean_Trim.as_p}}
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
 
@@ -103,7 +95,7 @@
                         <ul>
                             <li><a href="{% url 'first-page' %}">Home</a></li>
                             <li><a href="">How it works</a></li>
-                            <li><a href="">About Us</a></li>
+                            <li><a href="{% url 'about-page' %}">About Us</a></li>
                             <li><a href="{% url 'sign-page' %}">Register</a></li>
                             <li><a href="{% url 'log-page' %}">Login</a></li>
                         </ul>
