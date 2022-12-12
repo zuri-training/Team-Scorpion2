@@ -15,7 +15,7 @@
     text-align: center;
 }
 .logincontent h5 {
-    color: #794403;
+    color: var(--sec-two-color);
     font-family: var(--font-sub);
     font-weight: 700;
     font-size: 2rem;
@@ -29,7 +29,7 @@
 
 }
 .logincontent h6 {
-    color: #794403;
+    color: var(--sec-two-color);
     font-family: var(--font-sub);
     font-weight: 600;
     font-size: 1.5rem;
@@ -53,7 +53,7 @@
 .loginform label {
     font-family: var(--font-main);
     font-weight: 500;
-    color: #000714;
+    color: var(--dark-color);
     text-decoration: underline;
     font-size: 1rem;
     line-height: 1.1875rem;
@@ -91,7 +91,7 @@
 
 
 .loginbutton button {
-    background-color: #001744;
+    background-color: var(--sub-color);
     border: 0.0625rem solid;
     border-radius: 1.25rem;
     padding: 0.8125rem 3.5rem 0.9375rem;
@@ -99,6 +99,7 @@
     font-size: 1.4375rem;
     font-family: var(--font-main);
     width: 10.625rem;
+    outline: none;
 
 }
 
