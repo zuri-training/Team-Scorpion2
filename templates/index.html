@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/metadata.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/works.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/faq.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/support.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
     <title>PROJECT METADATA</title>
@@ -30,7 +31,6 @@
             <nav class="links">
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
-                <a href="/">FAQs</a>
                 <a href="{% url 'cont-page' %}">Contact Us</a>
                 {% if user.is_authenticated %}
                     <a href="{% url 'dash-page' %}">Dashboard</a>
@@ -45,17 +45,7 @@
                     <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                     <a href="{% url 'log-page' %}" id="log">Log in</a>
                 {% endif %}
-<<<<<<< HEAD
-               
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-               
-=======
->>>>>>> 4a61ac5cbcd35abc40176a5a8832927dcac3ceee
->>>>>>> 97f53b3906a0e7f996af147cd1a69b547b315726
->>>>>>> cb6ef4f0f18ceece1c41836c09e1d312497da6b1
+
             </nav>
                 
         </header>
@@ -130,6 +120,65 @@
                     </p>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="text">
+                <h1>
+                    FAQs
+                </h1>
+                <p>
+                    New to Fetch_metadata? We answered a few questions so you don’t have to worry about that
+                </p>
+            </div>
+
+            <div class="faqs">
+                <div class="question">
+                    <h3>
+                        What is metadata?
+                    </h3>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>
+                        Metadata is a set of data that describes and gives information about other data.
+                        It summarises basic information about data, making finding & working 
+                        with particular instances of data easier.
+                    </p>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="question">
+                    <h3>
+                        How can i download my metatdata file into my Pc?
+                    </h3>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>
+                        You can download the metadata file into your pc by
+                        hitting the download button on your dashboard after you must 
+                        have created an account
+                    </p>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="question">
+                    <h3>
+                        Can we have multiple users on a subscription plan?
+                    </h3>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>
+                        No, you cannot have multiple users on a subscription.
+                        Subscriptions are limited to one account only!
+                    </p>
+                </div>
             </div>
         </section>
 
