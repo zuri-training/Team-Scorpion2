@@ -60,6 +60,7 @@
                 <div class="signup-form">
 
                     <form action="{% url 'sign-page' %}" method="POST">
+                       
                         <div class="form-group">
                             {%csrf_token%}
                             {{Lean_Trim.as_p}}
