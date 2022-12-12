@@ -66,8 +66,16 @@
                     </div>
                         <p>Don't  have an account? <a href="{% url 'sign-page' %}">Sign up</a> </p>
                 </form>
+                <div>
+                    {% for errorMessage in messages %}
+                    <h3 style="color: red;">{{errorMessage}} </h3>
+                    {% endfor %}
+                </div>
             </div>
+            
         </div>
+       
+
 
 
 
@@ -98,9 +106,11 @@
                         <li><a href="{% url 'sign-page' %}">Register</a></li>
                         <li><a href="{% url 'log-page' %}">Login</a></li>
                     </ul>
+                    
 
                 </div>
-
+               
+                
                 <div class="help">
 
                     <p>Support</p>
