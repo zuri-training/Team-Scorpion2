@@ -1,8 +1,8 @@
 .wrapper {
     display: grid;
     grid-template-areas:
-    'a b b b b b b' 
-    'a c c c c c c'
+    'a b b b' 
+    'a c c c'
     ;
 }
 
@@ -47,24 +47,27 @@ div.c {
     border: 1px solid;
     border-radius: 5px;
     padding: 16px;
-    cursor: pointer;
 }
 .folder img {
     max-width: 100%;
 }
 
-.folder h4 {
+.folder button {
     color: #000000;
     font-size: 20px;
     font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
 }
 
 #file {
     background-color: #8091b3;
 }
 
-#file h4 {
+#file button {
     color:#FFFFFF;
+    border: none;
+    background-color: #8091b3;
 }
 
 #logout {
@@ -72,8 +75,10 @@ div.c {
     border: none;
 }
 
-#logout h4 {
+#logout button {
     color:#FFFFFF;
+    border: none;
+    background-color: #2B4880;
 }
 
 .divider {
@@ -120,9 +125,14 @@ div.c {
     padding-bottom: 45px;
 }
 
+.upload input {
+    display: none;
+}
+
 .upload img {
     max-width: 100%;
     padding-block: 29px 26px;
+    cursor: pointer;
 }
 
 .upload p {
