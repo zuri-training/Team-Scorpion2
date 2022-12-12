@@ -20,9 +20,12 @@ html, body{
     --main-color-hue: #556C99;
     --sub-color: #001D55;
     --accent-color: #AAB6CC;
+    --neutral-color: #E4E9E8;
     --plain-color: #f2f2f2;
     --sec-color: #F6B058;
+    --sec-two-color: #A15B03;
     --drop-color: 14, 14, 14;
+    --dark-color: #0e0e0e;
 
     --font-main: 'Roboto', sans-serif;
     --font-sub: 'Lato', sans-serif;
