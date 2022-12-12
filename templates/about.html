@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% load static %}
-=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,9 +23,12 @@
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
-                <a href="/">Contact Us</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                {%else%}
             </nav>
-
+                {%endif%}
             <nav class="register">
                 {% if user.is_authenticated %}
                     <a href="{% url 'log-out' %}" id="out">Log out</a>

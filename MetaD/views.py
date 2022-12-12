@@ -4,7 +4,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib import messages
 from django.contrib.auth.models import User
-from .forms import UserInfoForm, UploadedFilesForm
+from .forms import UserInfoForm,UploadedFilesForm
+from django.contrib import messages
 
 # to restrict unauthorized users from certain page, use:
 from django.contrib.auth.decorators import login_required 
@@ -21,6 +22,10 @@ def landingPage(request):
 
 def aboutUs(request):
     return render(request, 'about.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
 
 
 def signup_page(request):
@@ -56,14 +61,12 @@ def login_page(request):
         password = request.POST.get('password')
 
         user = authenticate(request, username=username, password=password)
-        if user:
-            if user.is_active:
-                login(request, user)
-                # redirect in real case will be to the pages authenticated users have access to, not home-page
-                return HttpResponseRedirect(reverse('first-page'))
-            else:
-                return HttpResponse('User does not exist')
-            # return redirect('sign-page')
+        if user is not None:
+            login(request, user)
+            # redirect in real case will be to the pages authenticated users have access to, not home-page
+            return HttpResponseRedirect(reverse('first-page'))
+        else:
+            messages.info(request,'Wrong username or password')
          
     return render(request, 'login.html', {})
 
@@ -73,3 +76,6 @@ def log_out_page(request):
     return HttpResponseRedirect(reverse('first-page'))
 
 
+@login_required
+def dashboard(request):
+    return render(request, 'dashboard.html' )
