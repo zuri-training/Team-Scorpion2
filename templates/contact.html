@@ -23,11 +23,11 @@
 
 
             <nav class="links">
-                <a href="{% url 'first-page' %}">Home</a>
-                <a href="{% url 'about-page' %}">About Us</a>
-                <a href="{% url 'cont-page' %}">Contact Us</a>
+                <a href="{% url 'first-page' %}" class="link">Home</a>
+                <a href="{% url 'about-page' %}" class="link">About Us</a>
+                <a href="{% url 'cont-page' %}" class="link">Contact Us</a>
                 {% if user.is_authenticated %}
-                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                    <a href="{% url 'dash-page' %}" class="link">Dashboard</a>
                 {%else%}
                 {%endif%}
             </nav>
@@ -43,7 +43,7 @@
                 
         </header>
 
-        <main class="contact">
+        <section class="contact">
 
             <div class="block">
                 <div class="text">
@@ -79,7 +79,7 @@
 
             </div>
 
-        </main>
+        </section>
 
         <footer>
             <div class="foots">

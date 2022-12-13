@@ -29,11 +29,11 @@
 
 
             <nav class="links">
-                <a href="{% url 'first-page' %}">Home</a>
-                <a href="{% url 'about-page' %}">About Us</a>
-                <a href="{% url 'cont-page' %}">Contact Us</a>
+                <a href="{% url 'first-page' %}" class="link">Home</a>
+                <a href="{% url 'about-page' %}" class="link">About Us</a>
+                <a href="{% url 'cont-page' %}" class="link">Contact Us</a>
                 {% if user.is_authenticated %}
-                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                    <a href="{% url 'dash-page' %}" class="link">Dashboard</a>
                 {%else%}
                 {%endif%}
             </nav>
@@ -66,8 +66,34 @@
                 </div>
 
                 <img src="{% static 'files/images/image5.png' %}" alt="Oops, couldn't load image file"/>
-
             </div>
+
+            <!-- <div class="two land">
+                <div class="text">
+                    <h1>
+                        Accomplish more with Fetch_Metadata
+                    </h1>
+                    <p>
+                        Fetch_Metadata is your remote friendly platform where you can get <br>
+                         all your metadata files easily accessible without stress.
+                    </p>
+                </div>
+                <img src="{% static 'files/images/two.png' %}" alt="Oops, couldn't load image file"/>
+            </div>
+
+            <div class="three land">
+                <div class="text">
+                    <h1>
+                        Why Fetch_Metadata?
+                    </h1>
+                    <p>
+                        Fetch_Metadata ensures that the data are FAIR: <br>
+                        Finable, Accessible, Interoperable and Reusable
+                    </p>
+                </div>
+
+                <img src="{% static 'files/images/three.png' %}" alt="Oops, couldn't load image file"/>
+            </div> -->
 
         </main>
 
