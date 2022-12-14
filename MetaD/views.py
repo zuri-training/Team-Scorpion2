@@ -67,7 +67,7 @@ def login_page(request):
         if user is not None:
             login(request, user)
             # redirect in real case will be to the pages authenticated users have access to, not home-page
-            return HttpResponseRedirect(reverse('first-page'))
+            return HttpResponseRedirect(reverse('dash-page'))
         else:
             messages.info(request,'Wrong username or password')
          
