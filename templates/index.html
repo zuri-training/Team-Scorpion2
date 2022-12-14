@@ -24,25 +24,29 @@
 
         <header>
 
-            <img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/>
+            <a href="{% url 'first-page' %}"><img src="{% static 'files/images/icon.png' %}" alt="Oh, no.. the file wouldn't open"/></a>
 
 
             <nav class="links">
                 <a href="{% url 'first-page' %}">Home</a>
                 <a href="{% url 'about-page' %}">About Us</a>
                 <a href="/">FAQs</a>
-                <a href="/">Contact Us</a>
+                <a href="{% url 'cont-page' %}">Contact Us</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                {%else%}
+                {%endif%}
             </nav>
-
+                
             <nav class="register">
                 {% if user.is_authenticated %}
                     <a href="{% url 'log-out' %}" id="out">Log out</a>
                 {%else%}
                     <a href="{% url 'sign-page' %}" id="sign">Sign Up</a>
                     <a href="{% url 'log-page' %}" id="log">Log in</a>
-               
-            </nav>
                 {% endif %}
+            </nav>
+                
         </header>
 
         <!-- the main body -->
@@ -163,9 +167,9 @@
                     <ul>
                         <li><a href="{% url 'first-page' %}"">Home</a></li>
                         <li><a href="">How it works</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="{% url 'sign-page' %}"">Register</a></li>
-                        <li><a href="{% url 'about-page' %}"">Login</a></li>
+                        <li><a href="{% url 'about-page' %}">About Us</a></li>
+                        <li><a href="{% url 'sign-page' %}">Register</a></li>
+                        <li><a href="{% url 'about-page' %}">Login</a></li>
                     </ul>
                     
                 </div>
