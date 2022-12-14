@@ -1,5 +1,8 @@
 main{
     background: var(--main-color);
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .land{
@@ -8,6 +11,7 @@ main{
     justify-content: space-around;
     padding: 0 3rem;
     font-family: var(--font-main);
+    width: 100%;
 }
 
 .one{
@@ -24,6 +28,18 @@ main{
     color: var(--accent-color);
 }
 
-.one p{
+.one p,
+.two p,
+.three p{
     font-size: 1.5rem;
+}
+
+.two, .three{
+    color: var(--sec-color);
+}
+
+.two h1,
+.three h1{
+    text-decoration: underline;
+    font-size: 3rem;
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
     <title>Contact Us</title>
 </head>
 <body>
@@ -22,12 +23,11 @@
 
 
             <nav class="links">
-                <a href="{% url 'first-page' %}">Home</a>
-                <a href="{% url 'about-page' %}">About Us</a>
-                <a href="/">FAQs</a>
-                <a href="{% url 'cont-page' %}">Contact Us</a>
+                <a href="{% url 'first-page' %}" class="link">Home</a>
+                <a href="{% url 'about-page' %}" class="link">About Us</a>
+                <a href="{% url 'cont-page' %}" class="link">Contact Us</a>
                 {% if user.is_authenticated %}
-                    <a href="{% url 'dash-page' %}">Dashboard</a>
+                    <a href="{% url 'dash-page' %}" class="link">Dashboard</a>
                 {%else%}
                 {%endif%}
             </nav>
@@ -43,11 +43,91 @@
                 
         </header>
 
-        <main>
+        <section class="contact">
 
-        </main>
+            <div class="block">
+                <div class="text">
+                    <h1>
+                        Get in Touch
+                    </h1>
+
+                    <div class="links">
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                    </div>
+
+                    <p>
+                        Our costumer satisfaction is our outmost priority! <br>
+                        Our support service is available round the clock <br>
+                        to assist with any question you may have regarding <br>
+                        our platform.
+                    </p>
+                </div>
+
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Your name">
+
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="" placeholder="your@email.com">
+
+                    <label for="">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                    <input type="button" value="Send" id="btn">
+                </form>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="foots">
+                
+                <div class="socials">
+
+                    <p>Connect with us</p>
+                    
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    
+                </div>
+                
+                <div class="links">
+                    
+                    <p>Quick Link</p>
+                    
+                    <ul>
+                        <li><a href="{% url 'first-page' %}"">Home</a></li>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="{% url 'about-page' %}">About Us</a></li>
+                        <li><a href="{% url 'sign-page' %}">Register</a></li>
+                        <li><a href="{% url 'about-page' %}">Login</a></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="help">
+                    
+                    <p>Support</p>
+                    
+                    <ul>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Blogs</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="copy">
+                copyright © 2022 Team_Scorpion 2
+            </div>
+        </footer>
 
     </div>
-    
+
+    <script src="{% static 'javascript/index.js' %}"></script>
 </body>
 </html>

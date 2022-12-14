@@ -27,11 +27,8 @@ nav a:hover{
     border-bottom: 0.2rem solid var(--plain-color);
 }
 
-nav a:focus{
-    color: var(--sub-color);
-}
 
-.links a.done { 
+.link.active a{ 
     color: var(--sub-color);
     border-bottom: 0.2rem solid var(--plain-color);
 }
