@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="{% static 'files/images/icon.png' %}" type="image/x-icon"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/dashboard.css'%}"/>
@@ -64,24 +65,33 @@
             </div>
         
         <!-- upload section -->
-            <div class="upload">
-                <label for="filename">
-                <img src="{% static 'files/images/Group 46.png' %}" alt=""/>
-                </label>
+            
+            <form  enctype="multipart/form-data" method="POST">
+                
+                {%csrf_token%}
+                <!-- <input type="file" name="document"> -->
+                {{slain_warrior.as_p}}
 
-                <input type="file" name="filename" id="filename" enctype="multipart/form-data">
-                <p>Click to add a file</p>
-                <p>Only jpg, csv, pdf, and json</p>
-            </div>
-        <!-- button section -->
-            <div class="button">
-                <button>View Metadata</button>
-            </div>
+                    <!-- <p>Click to add a file</p> -->
+                    <!-- <p>Only jpg, csv, pdf, and json</p> -->
+                
+                
+                    <!-- <img src="{% static 'files/images/Group 46.png' %}" alt=""/> -->
+                <!-- button section -->
+                <div class="button">
+                    <input type="Submit" value="View Metadata" ></input>
+                </div>
+            </form>
+
+                
+            
+        
 
         <!-- view section -->
             <div class="view">
-                <img src="{% static 'files/images/material-symbols_download.png' %}" alt=""/>
-                <img src="{% static 'files/images/Vector (3).png' %}" alt="" class="sec-img"/>
+                
+
+
             </div>
 
         </div>
