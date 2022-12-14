@@ -7,21 +7,19 @@
 }
 
 div.a {
-    background-color: #2B4880;
+    background-color: var(--main-color);
     grid-area: a;
     
 }
 div.b {
-    background-color: #FFFFFF;
+    background-color: var(--plain-color);
     grid-area: b;
     
 
 }
 div.c {
-    background-color: #2B4880;
+    background-color: var(--main-color);
     grid-area: c;
-    
-
 }
 
 /* Side bar css starts here */
@@ -41,7 +39,7 @@ div.c {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #f7f8f8;
+    background-color: var(--neutral-color);
     width: 200px;
     margin-bottom: 32px;
     border: 1px solid;
@@ -65,20 +63,20 @@ div.c {
 }
 
 #file button {
-    color:#FFFFFF;
+    color:var(--plain-color);
     border: none;
     background-color: #8091b3;
 }
 
 #logout {
-    background-color: #2B4880;
+    background-color: var(--main-color);
     border: none;
 }
 
 #logout button {
-    color:#FFFFFF;
+    color:var(--plain-color);
     border: none;
-    background-color: #2B4880;
+    background-color: var(--main-color);
 }
 
 .divider {
@@ -153,7 +151,7 @@ div.c {
 .button button{
     border-radius: 15px;
     background-color: #001744;
-    color: #FFFFFF;
+    color: var(--plain-color);
     padding: 19px 52px;
     font-size: 19px;
     font-family: var(--font-main);
@@ -192,7 +190,7 @@ div.c {
     line-height: 38px;
     font-family: var(--font-sub);
     text-decoration: underline;
-    color: #f7f8f8;
+    color: var(--neutral-color);
 }
 
 .view-all p {
