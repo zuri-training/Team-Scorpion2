@@ -17,5 +17,5 @@ class UserInfoForm(forms.ModelForm):
 class UploadedFilesForm(forms.ModelForm):
     class Meta:
         model = UploadedFiles
-        fields = '__all__'
+        fields = ['files_Upload']
 

@@ -6,6 +6,9 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from .forms import UserInfoForm,UploadedFilesForm
 from django.contrib import messages
+import subprocess
+ 
+import os
 
 # to restrict unauthorized users from certain page, use:
 from django.contrib.auth.decorators import login_required 
@@ -78,4 +81,36 @@ def log_out_page(request):
 
 @login_required
 def dashboard(request):
-    return render(request, 'dashboard.html' )
+    extreme = UploadedFilesForm
+    blight = {'slain_warrior':extreme}
+    if request.method == 'POST':
+        inputfile = extreme(request.POST, request.FILES['files_Upload'])
+        if inputfile.is_valid():
+            servers = inputfile.save()
+            input_file = f"/Team-Scorpion2/media/{servers}"
+            exe = "/Team-Scorpion2/Scripts/exiftool(-k).exe"
+            process = subprocess.Popen([exe, input_file], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True)
+            for output in process.stdout:
+                print(output)
+        # print(inputfile.size) 
+        # print(inputfile.charset)
+        
+        
+    # pathtofile = '/media/'
+    # context = {}
+    
+
+    # if request.method == 'POST':
+    #     school = extreme(request.POST, request.FILES)
+    #     if school.is_valid():
+    #         metadata = [school.name, school.size, school.content_type, school.charset, school.content_type_extra]
+    #         context['url'] = metadata.url
+    #         metadata.save()
+        
+        
+    #         return metadata, context
+
+            
+
+
+    return render(request, 'dashboard.html', context=blight)

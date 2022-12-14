@@ -12,7 +12,7 @@ class UserInfo(models.Model):
 
 
 class UploadedFiles(models.Model):
-    filesUpload = models.FileField(upload_to='media', blank=False)
+    files_Upload = models.FileField(upload_to='media', blank=False)
     filename = models.CharField(max_length=15, null=True)
 
     def __str__(self):
