@@ -40,20 +40,13 @@ def signup_page(request):
 
     if request.method == 'POST':
         mitigate = trim(request.POST)
-<<<<<<< HEAD
     
         if mitigate.is_valid():
             user = mitigate.save()
             user.set_password(user.password)
         
 
-=======
-       
-        if mitigate.is_valid():
-            user = mitigate.save()
-            user.set_password(user.password)
-       
->>>>>>> main
+
             mitigate.save()
             
         return HttpResponseRedirect(reverse('log-page'))
@@ -110,19 +103,10 @@ def dashboard(request):
             # C:\Users\User\Desktop\brain\New folder (2)\Team-Scorpion2-change\Scripts\exiftool(-k).exe
             media = new_file.files_Upload.url.lstrip('/')
             process = subprocess.Popen([exe, media], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True)
-<<<<<<< HEAD
-            for output in process.stdout:
-                print(output.strip())
-       
-
-=======
             # press('enter')
             for output in process.stdout:
                 print(output.strip())
                 
-       
-        
->>>>>>> main
             
 
 
