@@ -1,11 +1,13 @@
-//color of four links to change on click
-const links = document.querySelectorAll(".link")
+//color of links to change on click
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('link');
 
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    link.classList.toggle("active");
-  });
-});
+forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+  }
+})
+
 
 
 //to toggle faqs
