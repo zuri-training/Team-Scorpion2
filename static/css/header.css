@@ -28,7 +28,7 @@ nav a:hover{
 }
 
 
-.link.active a{ 
+nav a:is( :link, :active, :visited).active{
     color: var(--sub-color);
     border-bottom: 0.2rem solid var(--plain-color);
 }
@@ -55,5 +55,13 @@ nav a:hover{
     background-color: var(--plain-color);
     color: var(--main-color);
     border-radius: 2rem;
-    border: 0.02rem solid var(--sub-color)
+    border: 0.02rem solid var(--sub-color);
+}
+
+#out{
+    padding: 0.3rem 1.7rem;
+    background: var(--sub-color);
+    color: var(--plain-color);
+    border-radius: 2rem;
+    border: 0.02rem solid var(--sub-color);
 }

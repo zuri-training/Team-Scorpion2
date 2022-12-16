@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from .forms import UserInfoForm,UploadedFilesForm
 from MetaD.models import UploadedFiles
 from django.contrib import messages
-from keyboard import press
+# from keyboard import press
 import subprocess
  
 import os
