@@ -65,3 +65,7 @@ nav a:is( :link, :active, :visited).active{
     border-radius: 2rem;
     border: 0.02rem solid var(--sub-color);
 }
+
+#out:hover{
+    background: var(--main-color);
+}
