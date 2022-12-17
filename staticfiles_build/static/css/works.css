@@ -1,0 +1,40 @@
+.works{
+    font-family: var(--font-main);
+    background: var(--accent-color);
+    padding: 1rem;
+}
+
+.works h1{
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: underline;
+    font-family: var(--font-sub);
+    font-size: 2.3rem;
+    padding: 1.5rem 0 3rem 0;
+}
+
+.works .block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.works .block .card{
+    display: grid;
+    place-items: center;
+    width: 12rem;
+    height: 7rem;
+    text-align: center;
+}
+
+.works .block .card span{
+    font-family: var(--font-sub);
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    background: var(--main-color);
+    color: var(--sec-color);
+    padding: 0.1rem 0.7rem;
+    box-shadow: -0.5rem -0.2rem 0 var(--plain-color);
+}
+

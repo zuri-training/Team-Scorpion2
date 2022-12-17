@@ -1,0 +1,45 @@
+main{
+    background: var(--main-color);
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.land{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 3rem;
+    font-family: var(--font-main);
+    width: 100%;
+}
+
+.one{
+    color: var(--sec-color);
+}
+
+.one h1{
+    text-decoration: underline;
+    font-size: 3rem;
+    font-family: var(--font-sub);
+}
+
+.one h1 span{
+    color: var(--accent-color);
+}
+
+.one p,
+.two p,
+.three p{
+    font-size: 1.5rem;
+}
+
+.two, .three{
+    color: var(--sec-color);
+}
+
+.two h1,
+.three h1{
+    text-decoration: underline;
+    font-size: 3rem;
+}

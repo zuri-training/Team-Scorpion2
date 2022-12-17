@@ -1,0 +1,203 @@
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    'a b b b' 
+    'a c c c'
+    ;
+}
+
+div.a {
+    background-color: var(--main-color);
+    grid-area: a;
+    
+}
+div.b {
+    background-color: var(--plain-color);
+    grid-area: b;
+    
+
+}
+div.c {
+    background-color: var(--main-color);
+    grid-area: c;
+}
+
+/* Side bar css starts here */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img img {
+    max-width: 100%;
+    padding-block: 100px 77px;
+}
+
+.folder {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--neutral-color);
+    width: 200px;
+    margin-bottom: 32px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 16px;
+}
+.folder img {
+    max-width: 100%;
+}
+
+.folder button {
+    color: #000000;
+    font-size: 20px;
+    font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
+}
+
+#file {
+    background-color: #8091b3;
+}
+
+#file button {
+    color:var(--plain-color);
+    border: none;
+    background-color: #8091b3;
+}
+
+#logout {
+    background-color: var(--main-color);
+    border: none;
+}
+
+#logout button {
+    color:var(--plain-color);
+    border: none;
+    background-color: var(--main-color);
+}
+
+.divider {
+    max-width: 100%;
+    margin-block: 32px 64px;
+}
+
+/* main section css starts here */
+
+/* nav bar css */
+
+.navbar ul {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar img {
+    max-width: 100%;
+    margin-block: 10px 26px;
+}
+
+.navbar input {
+    padding: 1rem;
+    width: 408px;
+    border-radius: 15px;
+}
+
+/* upload section css */
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 842px;
+    margin: auto;
+    margin-block: 38px 41px;
+    border-radius: 5px;
+    border: 1px dashed #2A4880;
+    padding-bottom: 45px;
+}
+
+.upload input {
+    display: none;
+}
+
+.upload img {
+    max-width: 100%;
+    padding-block: 29px 26px;
+    cursor: pointer;
+}
+
+.upload p {
+    font-size: 23px;
+    font-family: var(--font-main);
+    color: #001744;
+    margin-bottom: 7px;
+}
+
+/* button css */
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button button{
+    border-radius: 15px;
+    background-color: #001744;
+    color: var(--plain-color);
+    padding: 19px 52px;
+    font-size: 19px;
+    font-family: var(--font-main);
+}
+
+/* view section */
+
+.view {
+    max-width: 842px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #2A4880;
+    display: flex;
+    justify-content: flex-end;
+    height: 200px;
+    align-items: flex-end;
+}
+
+.view img {
+    max-width: 100%;
+    padding-inline: 1rem;
+    
+}
+
+/* display section */
+
+.display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recentfiles p {
+    padding: 17px 0 0 50px;
+    font-size: 20px;
+    line-height: 38px;
+    font-family: var(--font-sub);
+    text-decoration: underline;
+    color: var(--neutral-color);
+}
+
+.view-all p {
+    padding: 17px 50px 0 0px;
+    font-size: 20px;
+    line-height: 38px;
+    font-family: var(--font-sub);
+    text-decoration: underline;
+    color: #C97104;
+}
