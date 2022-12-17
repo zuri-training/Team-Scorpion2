@@ -1,0 +1,112 @@
+.signup {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.signup-title h3 {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: var(--font-main);
+    line-height: 39px;
+    color: var(--sub-color);
+    margin-block: 3rem 2.125rem;
+    text-align: center;
+}
+
+form input{
+    outline: none;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name label {
+    color: rgba(var(--drop-color), 0.69);
+    font-size: 19px;
+    font-family: var(--font-main);
+}
+.name input {
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid var(--sub-color);
+    background-color: var(--plain-color);
+    padding: 8px;
+    margin-block: 8px;
+}
+
+.lastname input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--sub-color);
+    background-color: var(--plain-color);
+    padding: 8px;
+    margin-block: 8px;
+}
+
+
+
+.email label {
+    color: rgba(var(--drop-color), 0.69);
+    font-size: 19px;
+    font-family: var(--font-main);
+}
+.email input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--sub-color);
+    background-color: var(--plain-color);
+    padding: 8px;
+    margin-block: 8px;
+
+}
+
+.password label {
+    color: rgba(var(--drop-color), 0.69);
+    font-size: 19px;
+    font-family: var(--font-main);
+}
+.password input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--sub-color);
+    background-color: var(--plain-color);
+    padding: 8px;
+    margin-block: 8px;
+
+}
+
+.terms label {
+    font-size: 19px;
+    font-family: var(--font-main);
+    color: var(--sub-color);
+    line-height: 23px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-block: 34px 70px;
+}
+.button button {
+    border-radius: 20px;
+    padding: 13px 18px 15px;
+    color: var(--plain-color);
+    background-color: var(--sub-color);
+    cursor: pointer;
+}
+
+.signup-img {
+    max-width: 100%;
+    padding: 3rem 1rem;
+}
+.signup-img img{
+    max-width: 100%;
+}
+
+/* form style */
+

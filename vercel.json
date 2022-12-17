@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "team-scorpion2/wsgi.py",
+        "src": "fetch_metadata/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "team-scorpion2/wsgi.py"
+        "dest": "fetch_metadata/wsgi.py"
       }
     ]
   }

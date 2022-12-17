@@ -10,6 +10,14 @@ This is aimed at providing the metadata of files uploaded by authenticated clien
 This website is aimed to be cross-platform friendly, so it can be accessed by the users of different devices.
 </p>
 
+### Project link
+
+<details>
+<summary>Live project</summary>
+
+<a href="http://fetchmetadata.vercel.app/">Live link</a>
+</details>
+
 ## Features offered 
 
 ### Unauthenicated User 🔏
