@@ -1,12 +1,12 @@
 //color of links to change on click
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('link');
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelectorAll('link');
 
-forEach(link => {
-  if(link.href.includes(`${activePage}`)){
-    link.classList.add('active');
-  }
-})
+// forEach(link => {
+//   if(link.href.includes(`${activePage}`)){
+//     link.classList.add('active');
+//   }
+// })
 
 
 
