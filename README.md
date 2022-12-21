@@ -15,7 +15,7 @@ This website is aimed to be cross-platform friendly, so it can be accessed by th
 <details>
 <summary>Live project</summary>
 
-<a href="http://fetchmetadata.vercel.app/">Live link</a>
+<a href="http://l0rd5n0w.pythonanywhere.com/">Live link</a>
 </details>
 
 ## Features offered 
